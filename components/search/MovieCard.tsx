@@ -1,4 +1,5 @@
 import type { Movie } from '@/types/movie';
+import Link from 'next/link';
 
 interface MovieCardProps {
   movie: Movie;
@@ -6,7 +7,8 @@ interface MovieCardProps {
 
 export default function MovieCard({ movie }: MovieCardProps) {
   return (
-    <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 p-6 rounded-xl border border-white/10 hover:border-red-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-red-500/20">
+    <Link href={`/detail/${movie.movieCd}`}>
+      <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 p-6 rounded-xl border border-white/10 hover:border-red-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-red-500/20 cursor-pointer hover:scale-105">
       <h3 className="text-xl font-bold text-white mb-2">{movie.movieNm}</h3>
       {movie.movieNmEn && (
         <p className="text-gray-400 text-sm mb-3">{movie.movieNmEn}</p>
@@ -36,5 +38,6 @@ export default function MovieCard({ movie }: MovieCardProps) {
         )}
       </div>
     </div>
+    </Link>
   );
 }

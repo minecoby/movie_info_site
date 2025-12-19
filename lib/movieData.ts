@@ -33,6 +33,11 @@ export function getAllMovies(): Movie[] {
   ];
 }
 
+export function getMovieByCode(movieCd: string): Movie | undefined {
+  const movies = getAllMovies();
+  return movies.find(movie => movie.movieCd === movieCd);
+}
+
 export function getMovieStats() {
   const movies = getAllMovies();
 
