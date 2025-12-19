@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { getAllMovies, getMovieStats } from '@/lib/movieData';
 import SearchBar from '@/components/search/SearchBar';
@@ -10,10 +10,8 @@ import MovieCard from '@/components/search/MovieCard';
 import Pagination from '@/components/search/Pagination';
 
 const ITEMS_PER_PAGE = 21;
-//깃허브 페이지 빌드하는데 useSearchParams 에러가 발생, 동적 설정
-export const dynamic = 'force-dynamic';
 
-export default function SearchPage() {
+function SearchContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
 
@@ -201,5 +199,14 @@ export default function SearchPage() {
         </div>
       )}
     </div>
+  );
+}
+
+// 정적빌드 에러 suspense로 묶기
+export default function SearchPage() {
+  return (
+    <Suspense>
+      <SearchContent />
+    </Suspense>
   );
 }
