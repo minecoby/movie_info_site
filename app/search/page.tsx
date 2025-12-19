@@ -10,6 +10,8 @@ import MovieCard from '@/components/search/MovieCard';
 import Pagination from '@/components/search/Pagination';
 
 const ITEMS_PER_PAGE = 21;
+//깃허브 페이지 빌드하는데 useSearchParams 에러가 발생, 동적 설정
+export const dynamic = 'force-dynamic';
 
 export default function SearchPage() {
   const router = useRouter();
