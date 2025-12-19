@@ -1207,34 +1207,6 @@
                 ]
             },
             {
-                "movieCd": "20218656",
-                "movieNm": "롱디",
-                "movieNmEn": "Long D",
-                "prdtYear": "2022",
-                "openDt": "20230510",
-                "typeNm": "장편",
-                "prdtStatNm": "개봉",
-                "nationAlt": "한국",
-                "genreAlt": "멜로/로맨스,코미디",
-                "repNationNm": "한국",
-                "repGenreNm": "멜로/로맨스",
-                "directors": [
-                    {
-                        "peopleNm": "임재완"
-                    }
-                ],
-                "companys": [
-                    {
-                        "companyCd": "20228853",
-                        "companyNm": "트웰브져니(주)"
-                    },
-                    {
-                        "companyCd": "20102062",
-                        "companyNm": "바젤레브스프로덕션"
-                    }
-                ]
-            },
-            {
                 "movieCd": "20227374",
                 "movieNm": "바빌론",
                 "movieNmEn": "Babylon",
@@ -1757,25 +1729,6 @@
                 ]
             },
             {
-                "movieCd": "20230628",
-                "movieNm": "너무 쉬운 며느리 무삭제판",
-                "movieNmEn": "",
-                "prdtYear": "2022",
-                "openDt": "20230629",
-                "typeNm": "장편",
-                "prdtStatNm": "개봉",
-                "nationAlt": "일본",
-                "genreAlt": "멜로/로맨스",
-                "repNationNm": "일본",
-                "repGenreNm": "멜로/로맨스",
-                "directors": [
-                    {
-                        "peopleNm": "사쿠라비토"
-                    }
-                ],
-                "companys": []
-            },
-            {
                 "movieCd": "20232392",
                 "movieNm": "뮤지컬 윌리엄과 윌리엄의 윌리엄들",
                 "movieNmEn": "",
@@ -2196,21 +2149,6 @@
                         "peopleNm": "미야케 쇼"
                     }
                 ],
-                "companys": []
-            },
-            {
-                "movieCd": "20231834",
-                "movieNm": "금지된 관계",
-                "movieNmEn": "River of Desire",
-                "prdtYear": "2022",
-                "openDt": "20230615",
-                "typeNm": "장편",
-                "prdtStatNm": "개봉",
-                "nationAlt": "브라질",
-                "genreAlt": "멜로/로맨스,드라마",
-                "repNationNm": "브라질",
-                "repGenreNm": "멜로/로맨스",
-                "directors": [],
                 "companys": []
             },
             {
@@ -2834,25 +2772,6 @@
                 "directors": [
                     {
                         "peopleNm": "청웨이하오"
-                    }
-                ],
-                "companys": []
-            },
-            {
-                "movieCd": "20231330",
-                "movieNm": "내 아내 이야기",
-                "movieNmEn": "The Story of My Wife",
-                "prdtYear": "2021",
-                "openDt": "20230524",
-                "typeNm": "장편",
-                "prdtStatNm": "개봉",
-                "nationAlt": "독일",
-                "genreAlt": "멜로/로맨스",
-                "repNationNm": "독일",
-                "repGenreNm": "멜로/로맨스",
-                "directors": [
-                    {
-                        "peopleNm": "일디코 엔예디"
                     }
                 ],
                 "companys": []
@@ -5337,34 +5256,6 @@
                     {
                         "companyCd": "20063187",
                         "companyNm": "㈜리필름"
-                    }
-                ]
-            },
-            {
-                "movieCd": "20239570",
-                "movieNm": "10일간의 애인",
-                "movieNmEn": "",
-                "prdtYear": "2022",
-                "openDt": "20230112",
-                "typeNm": "장편",
-                "prdtStatNm": "개봉",
-                "nationAlt": "한국",
-                "genreAlt": "멜로/로맨스",
-                "repNationNm": "한국",
-                "repGenreNm": "멜로/로맨스",
-                "directors": [
-                    {
-                        "peopleNm": "이영용"
-                    }
-                ],
-                "companys": [
-                    {
-                        "companyCd": "20154968",
-                        "companyNm": "(주)로드하우스"
-                    },
-                    {
-                        "companyCd": "20203581",
-                        "companyNm": "꿀잼컴퍼니(주)"
                     }
                 ]
             },

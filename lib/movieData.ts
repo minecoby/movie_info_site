@@ -60,10 +60,20 @@ export function getMovieStats() {
     yearCounts[year] = (yearCounts[year] || 0) + 1;
   });
 
+  // 월별 개봉 집계
+  const monthCounts: Record<string, number> = {};
+  movies.forEach(movie => {
+    if (movie.openDt && movie.openDt.length >= 6) {
+      const yearMonth = movie.openDt.substring(0, 6); 
+      monthCounts[yearMonth] = (monthCounts[yearMonth] || 0) + 1;
+    }
+  });
+
   return {
     totalMovies,
     genreCounts,
     countryCounts,
     yearCounts,
+    monthCounts,
   };
 }
