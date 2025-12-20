@@ -140,8 +140,8 @@ function SearchContent() {
   const hasActiveFilters = !!(queryFromUrl || genreFromUrl || countryFromUrl);
 
   return (
-    <div className="container mx-auto px-4 py-16">
-      <h1 className="text-5xl font-bold mb-12 text-white bg-gradient-to-r from-white to-red-500 bg-clip-text text-transparent">
+    <div className="container mx-auto px-4 py-8 sm:py-12 md:py-16">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-10 md:mb-12 text-white bg-gradient-to-r from-white to-red-500 bg-clip-text text-transparent">
         영화 검색
       </h1>
 

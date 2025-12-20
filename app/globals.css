@@ -22,3 +22,34 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f0f0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e50914;
+}
+
+::selection {
+  background-color: #e50914;
+  color: white;
+}
+
+*:focus-visible {
+  outline: 2px solid #e50914;
+  outline-offset: 2px;
+}
+
+html {
+  scroll-behavior: smooth;
+}

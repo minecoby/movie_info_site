@@ -37,12 +37,12 @@ export default function Pagination({ currentPage, totalPages, onPageChange }: Pa
   if (totalPages <= 1) return null;
 
   return (
-    <div className="flex justify-center items-center gap-2">
+    <div className="flex justify-center items-center gap-1 sm:gap-2 flex-wrap">
       {/* 이전 페이지 */}
       <button
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
-        className="px-4 py-2 bg-zinc-900 border border-white/10 rounded-lg text-white disabled:opacity-30 disabled:cursor-not-allowed hover:border-red-500/50 transition-colors"
+        className="px-3 sm:px-4 py-2 bg-zinc-900 border border-white/10 rounded-lg text-sm sm:text-base text-white disabled:opacity-30 disabled:cursor-not-allowed hover:border-red-500/50 transition-colors"
       >
         이전
       </button>
@@ -53,7 +53,7 @@ export default function Pagination({ currentPage, totalPages, onPageChange }: Pa
           <button
             key={idx}
             onClick={() => onPageChange(page)}
-            className={`px-4 py-2 rounded-lg transition-colors ${
+            className={`px-3 sm:px-4 py-2 rounded-lg text-sm sm:text-base transition-colors ${
               currentPage === page
                 ? 'bg-gradient-to-r from-red-600 to-red-500 text-white font-semibold'
                 : 'bg-zinc-900 border border-white/10 text-white hover:border-red-500/50'
@@ -62,7 +62,7 @@ export default function Pagination({ currentPage, totalPages, onPageChange }: Pa
             {page}
           </button>
         ) : (
-          <span key={idx} className="px-2 text-gray-500">
+          <span key={idx} className="px-1 sm:px-2 text-gray-500 text-sm sm:text-base">
             {page}
           </span>
         )
@@ -72,7 +72,7 @@ export default function Pagination({ currentPage, totalPages, onPageChange }: Pa
       <button
         onClick={() => onPageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
-        className="px-4 py-2 bg-zinc-900 border border-white/10 rounded-lg text-white disabled:opacity-30 disabled:cursor-not-allowed hover:border-red-500/50 transition-colors"
+        className="px-3 sm:px-4 py-2 bg-zinc-900 border border-white/10 rounded-lg text-sm sm:text-base text-white disabled:opacity-30 disabled:cursor-not-allowed hover:border-red-500/50 transition-colors"
       >
         다음
       </button>

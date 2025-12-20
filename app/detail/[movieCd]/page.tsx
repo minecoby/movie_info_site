@@ -28,16 +28,16 @@ export default async function DetailPage({ params }: DetailPageProps) {
   }
 
   return (
-    <div className="container mx-auto px-4 py-16 max-w-4xl">
+    <div className="container mx-auto px-4 py-8 sm:py-12 md:py-16 max-w-4xl">
       <BackButton href="/search" label="검색으로 돌아가기" />
 
       {/* 영화 제목 */}
-      <div className="mb-12">
-        <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-white to-red-500 bg-clip-text text-transparent">
+      <div className="mb-8 sm:mb-10 md:mb-12">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 bg-gradient-to-r from-white to-red-500 bg-clip-text text-transparent">
           {movie.movieNm}
         </h1>
         {movie.movieNmEn && (
-          <p className="text-2xl text-gray-400">{movie.movieNmEn}</p>
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-400">{movie.movieNmEn}</p>
         )}
       </div>
 

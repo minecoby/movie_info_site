@@ -17,24 +17,24 @@ export default function Home() {
     .slice(0, 3);
 
   return (
-    <div className="container mx-auto px-4 py-16">
-      <div className="text-center mb-16">
-        <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-white via-red-500 to-red-600 bg-clip-text text-transparent">
+    <div className="container mx-auto px-4 py-8 sm:py-12 md:py-16">
+      <div className="text-center mb-12 md:mb-16">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-white via-red-500 to-red-600 bg-clip-text text-transparent">
           영화 정보 대시보드
         </h1>
-        <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
+        <p className="text-base sm:text-lg md:text-xl text-gray-400 mb-6 md:mb-10 max-w-2xl mx-auto px-4">
           2023-2025년 한국 영화 데이터 시각화 및 분석
         </p>
-        <div className="flex gap-4 justify-center">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
           <Link
             href="/dashboard"
-            className="bg-red-600 text-white px-8 py-4 rounded-lg hover:bg-red-700 transition-all duration-300 font-semibold shadow-lg shadow-red-600/50 hover:shadow-red-600/80 hover:scale-105"
+            className="bg-red-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-red-700 transition-all duration-300 font-semibold shadow-lg shadow-red-600/50 hover:shadow-red-600/80 hover:scale-105"
           >
             대시보드 보기
           </Link>
           <Link
             href="/search"
-            className="bg-zinc-800 text-white px-8 py-4 rounded-lg hover:bg-zinc-700 transition-all duration-300 font-semibold border border-white/10 hover:border-white/30 hover:scale-105"
+            className="bg-zinc-800 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-zinc-700 transition-all duration-300 font-semibold border border-white/10 hover:border-white/30 hover:scale-105"
           >
             영화 검색
           </Link>
