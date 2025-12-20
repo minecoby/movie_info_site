@@ -9,10 +9,10 @@ export default function AboutPage() {
           <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-white">프로젝트 개요</h2>
           <p className="text-gray-300 leading-relaxed mb-4">
             이 프로젝트는 2023-2025년 한국 영화 데이터를 시각화하고 분석하는 사이트입니다.
-            다양한 차트와 검색 기능을 통해 영화 데이터를 쉽게 찾아 볼 수 있습니다.
           </p>
           <p className="text-gray-300 leading-relaxed">
-            뭐쓰지 여기다가
+            직관적인 UI와 인터랙티브한 차트로 복잡한 데이터를 쉽게 확인해 볼 수 있으며,
+            세계적으로 개봉하였던 영화정보를 찾아볼 수 있습니다.
           </p>
         </section>
 
@@ -32,7 +32,11 @@ export default function AboutPage() {
             <div className="bg-black/30 p-5 sm:p-6 rounded-lg border border-white/5">
               <h3 className="font-semibold text-red-500 mb-3 text-base sm:text-lg">Features</h3>
               <ul className="space-y-2 text-gray-300">
-                <li>• App Router</li>
+                <li>• Next.js App Router</li>
+                <li>• Recharts 인터랙티브 차트</li>
+                <li>• SSG 정적 생성</li>
+                <li>• URL 기반 필터링</li>
+                <li>• 반응형 디자인</li>
               </ul>
             </div>
           </div>
@@ -60,7 +64,7 @@ export default function AboutPage() {
             </div>
             <div className="bg-black/30 p-5 rounded-lg border border-white/5">
               <h3 className="font-semibold text-red-500 mb-2">검색</h3>
-              <p className="text-gray-300">영화 제목으로 검색하고 상세 정보 확인 (단, 제가 직접 본 영화만 제공)</p>
+              <p className="text-gray-300">영화 제목으로 검색하고 상세 정보 확인</p>
             </div>
             <div className="bg-black/30 p-5 rounded-lg border border-white/5">
               <h3 className="font-semibold text-red-500 mb-2">반응형 디자인</h3>
