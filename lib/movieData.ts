@@ -69,7 +69,58 @@ export function getMovieStats() {
   const monthCounts: Record<string, number> = {};
   movies.forEach(movie => {
     if (movie.openDt && movie.openDt.length >= 6) {
-      const yearMonth = movie.openDt.substring(0, 6); 
+      const yearMonth = movie.openDt.substring(0, 6);
+      monthCounts[yearMonth] = (monthCounts[yearMonth] || 0) + 1;
+    }
+  });
+
+  return {
+    totalMovies,
+    genreCounts,
+    countryCounts,
+    yearCounts,
+    monthCounts,
+  };
+}
+
+// 필터링된 영화 통계 
+export function getFilteredMovieStats(yearFilter: string = 'all') {
+  let movies = getAllMovies();
+
+  // 연도 필터 적용
+  if (yearFilter !== 'all') {
+    movies = movies.filter(movie => {
+      if (!movie.openDt || movie.openDt.length < 4) return false;
+      const openYear = movie.openDt.substring(0, 4);
+      return openYear === yearFilter;
+    });
+  }
+
+  // 통계 계산
+  const totalMovies = movies.length;
+
+  const genreCounts: Record<string, number> = {};
+  movies.forEach(movie => {
+    const genre = movie.repGenreNm || '기타';
+    genreCounts[genre] = (genreCounts[genre] || 0) + 1;
+  });
+
+  const countryCounts: Record<string, number> = {};
+  movies.forEach(movie => {
+    const country = movie.repNationNm || '기타';
+    countryCounts[country] = (countryCounts[country] || 0) + 1;
+  });
+
+  const yearCounts: Record<string, number> = {};
+  movies.forEach(movie => {
+    const year = movie.prdtYear || '미상';
+    yearCounts[year] = (yearCounts[year] || 0) + 1;
+  });
+
+  const monthCounts: Record<string, number> = {};
+  movies.forEach(movie => {
+    if (movie.openDt && movie.openDt.length >= 6) {
+      const yearMonth = movie.openDt.substring(0, 6);
       monthCounts[yearMonth] = (monthCounts[yearMonth] || 0) + 1;
     }
   });
