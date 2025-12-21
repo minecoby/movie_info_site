@@ -2,6 +2,18 @@ import Link from "next/link";
 import { getMovieStats } from "@/lib/movieData";
 import StatCard from "@/components/StatCard";
 import TopList from "@/components/TopList";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "홈 - 영화 정보 대시보드",
+  description: "2023-2025년 한국 영화 데이터를 시각화하고 분석하는 대시보드입니다. 장르별, 국가별 영화 통계를 확인하고 다양한 영화 정보를 검색해보세요.",
+  keywords: ["영화", "영화 정보", "영화 데이터", "영화 통계", "영화 검색", "KOBIS"],
+  openGraph: {
+    title: "영화 정보 대시보드",
+    description: "2023-2025년 한국 영화 데이터 시각화 및 분석",
+    type: "website",
+  },
+};
 
 export default function Home() {
   const stats = getMovieStats();

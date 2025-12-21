@@ -1,3 +1,16 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "프로젝트 소개 - 영화 정보 대시보드",
+  description: "2023-2025년 한국 영화 데이터 시각화 프로젝트에 대한 소개입니다. Next.js, React, TypeScript를 활용한 영화 데이터 분석 대시보드의 기술 스택과 주요 기능을 확인하세요.",
+  keywords: ["프로젝트 소개", "영화 데이터", "Next.js", "React", "TypeScript", "KOBIS", "영화진흥위원회"],
+  openGraph: {
+    title: "프로젝트 소개 - 영화 정보 대시보드",
+    description: "영화 데이터 시각화 프로젝트 소개 및 기술 스택",
+    type: "website",
+  },
+};
+
 export default function AboutPage() {
   return (
     <div className="container mx-auto px-4 py-8 sm:py-12 md:py-16 max-w-4xl">
